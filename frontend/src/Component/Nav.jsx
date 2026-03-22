@@ -1,8 +1,7 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
 import axios from 'axios';
-import { AuthDataContext } from './AuthContext';
+import { AuthDataContext } from './AuthContext';   // same folder, correct
 
-// ✅ Named export – this is what Nav.jsx imports
 export const listingDataContext = createContext();
 
 const ListingProvider = ({ children }) => {
