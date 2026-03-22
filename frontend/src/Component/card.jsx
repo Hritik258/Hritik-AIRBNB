@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { listingDataContext } from '../Context/listingContext'
+import { listingDataContext } from '../Context/ListingContext'
 
 const Card = () => {
   const navigate = useNavigate()
