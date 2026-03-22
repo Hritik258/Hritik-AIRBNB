@@ -2,9 +2,10 @@ import React, { createContext, useState, useContext, useEffect } from 'react'
 import axios from 'axios'
 import { AuthDataContext } from './AuthContext'
 
-export const listingDataContext = createContext()
+// ✅ Use consistent naming - capitalize context name
+export const ListingContext = createContext()  // Changed from listingDataContext
 
-const ListingContext = ({ children }) => {
+const ListingProvider = ({ children }) => {  // Changed from ListingContext
 
   const { serverUrl } = useContext(AuthDataContext)
 
@@ -57,14 +58,13 @@ const ListingContext = ({ children }) => {
     }
   }
 
-  // ✅ delete listing
   const deleteListing = async (id) => {
     try {
       await axios.delete(
         `${serverUrl}/api/listing/delete/${id}`,
         { withCredentials: true }
       )
-      await getListing() // ✅ refresh after delete
+      await getListing()
       console.log("Listing deleted")
     } catch (error) {
       console.error("deleteListing error:", error.response?.data || error.message)
@@ -164,14 +164,14 @@ const ListingContext = ({ children }) => {
     handleViewCard,
     currentListing,
     setCurrentListing,
-    deleteListing, // ✅ added
+    deleteListing,
   }
 
   return (
-    <listingDataContext.Provider value={value}>
+    <ListingContext.Provider value={value}>  {/* Changed */}
       {children}
-    </listingDataContext.Provider>
+    </ListingContext.Provider>
   )
 }
 
-export default ListingContext
+export default ListingProvider  // Changed
