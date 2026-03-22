@@ -5,7 +5,7 @@ import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import AuthContext from './Context/AuthContext.jsx'
 import UserContext from './Context/UserContext.jsx'
-import ListingContext from './Context/listingContext.jsx'
+import ListingContext from './Context/ListingContext.jsx'  // ✅ Fixed: capital L
 import BookingContext from './Context/BookingContext.jsx'
 
 createRoot(document.getElementById('root')).render(
