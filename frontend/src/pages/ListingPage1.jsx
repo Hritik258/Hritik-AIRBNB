@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { listingDataContext } from '../Context/listingContext'
+import { listingDataContext } from '../Context/ListingContext'
 import { FaArrowLeft } from 'react-icons/fa'
 
 const ListingPage = () => {
