@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { listingDataContext } from '../Context/listingContext'
+import { listingDataContext } from '../Context/ListingContext'
 import { FaArrowLeft } from 'react-icons/fa'
 import { MdOutlineHolidayVillage, MdPool, MdBedroomParent } from 'react-icons/md'
 import { PiFarmFill } from 'react-icons/pi'
