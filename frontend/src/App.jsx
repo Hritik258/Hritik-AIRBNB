@@ -3,10 +3,10 @@ import { Route, Routes, Navigate } from 'react-router-dom'
 import { userDataContext } from './Context/UserContext'
 import Login from './pages/Login'
 import SignUp from './pages/SignUp'
-import Home from './pages/home'
+import Home from './pages/Home'  // ✅ Fixed: capital H
 import ListingPage from './pages/ListingPage1'
 import ListingPage2 from './pages/ListingPage2'
-import ListingPage3 from './pages/Listingpage3'
+import ListingPage3 from './pages/ListingPage3'  // ✅ Fixed: capital L, P, and 3
 import MyListing from './pages/MyListing'
 import Viewcard from './pages/Viewcard'
 import MyBooking from './pages/MyBooking'
