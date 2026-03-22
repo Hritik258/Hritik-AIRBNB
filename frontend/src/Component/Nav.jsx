@@ -13,7 +13,7 @@ import { CiShop } from "react-icons/ci";
 import { HiMenu } from "react-icons/hi";
 import { AuthDataContext } from '../Context/AuthContext';
 import { userDataContext } from '../Context/UserContext';
-import { listingDataContext } from '../Context/listingContext';
+import { listingDataContext } from '../Context/ListingContext';
 
 const Nav = () => {
   const { isAuthenticated, logout } = useContext(AuthDataContext);
