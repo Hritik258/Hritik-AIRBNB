@@ -7,7 +7,7 @@ export const AuthDataContext = createContext();
 const AuthContext = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-  const serverUrl = "http://localhost:5000";
+  const serverUrl = "https://hritik-airbnb-backend.onrender.com";
 
   useEffect(() => {
     const verifyToken = async () => {
