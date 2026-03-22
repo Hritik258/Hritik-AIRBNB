@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { listingDataContext } from '../Context/listingContext'
+import { listingDataContext } from '../Context/ListingContext'
 import { userDataContext } from '../Context/UserContext'
 import { AuthDataContext } from '../Context/AuthContext'
 import { bookingDataContext } from '../Context/BookingContext'
