@@ -5,15 +5,15 @@ import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import AuthContext from './Context/AuthContext.jsx'
 import UserContext from './Context/UserContext.jsx'
-import ListingContext from './Context/ListingContext.jsx'  // ✅ Fixed: capital L
+import ListingContext from './Context/ListingContext.jsx'
 import BookingContext from './Context/BookingContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <AuthContext>        {/* 1st — provides serverUrl, isAuthenticated */}
-      <UserContext>      {/* 2nd — provides userData */}
-        <ListingContext> {/* 3rd — uses serverUrl from AuthContext */}
-          <BookingContext> {/* 4th — uses serverUrl from AuthContext */}
+    <AuthContext>
+      <UserContext>
+        <ListingContext>
+          <BookingContext>
             <App />
           </BookingContext>
         </ListingContext>
@@ -21,7 +21,3 @@ createRoot(document.getElementById('root')).render(
     </AuthContext>
   </BrowserRouter>
 )
-
-what is problem check
-
-check this
