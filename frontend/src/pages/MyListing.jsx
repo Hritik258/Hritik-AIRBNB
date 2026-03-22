@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { userDataContext } from '../Context/UserContext'
-import { listingDataContext } from '../Context/listingContext'
+import { listingDataContext } from '../Context/ListingContext'
 import { bookingDataContext } from '../Context/BookingContext'
 import { FaArrowLeft } from 'react-icons/fa'
 
